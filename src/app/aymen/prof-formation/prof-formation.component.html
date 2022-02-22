@@ -1,0 +1,10 @@
+<div class="card" [ngClass]="{'success': statu==='active',
+                'danger': statu=== 'éteint'}" >
+  <div style="width: 20px;height: 20px;background-color: red;border-radius: 30px;margin-top: -30px" *ngIf="statu==='éteint'" ></div>
+  <div style="width: 20px;height: 20px;background-color: green;border-radius: 30px;margin-top: -30px" *ngIf="statu==='active'" > </div>
+  <br><br>
+  <div>
+    <h4>{{namefor}}</h4>
+    <p>{{cont}}</p><br>
+  </div>
+</div>

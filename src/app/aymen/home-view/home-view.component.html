@@ -1,0 +1,17 @@
+
+<br><br><br>
+<div id="service">
+  <div>
+    <div class="container">
+      <app-formation-home *ngFor="let form of formations;let i = index "
+                          [indexton]="i"
+                          [namefor]="form.namefor"
+                          [cont]="form.cont"
+                          [statu]="form.statu"
+      ></app-formation-home>
+
+      <button *ngIf="root" class="btn-success" (click)="allumeForm()" >disponible </button>
+      <button *ngIf="root" class="btn-danger" (click)="etiendreForm()" >indisponible</button>
+    </div>
+</div>
+</div>

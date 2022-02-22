@@ -1,0 +1,12 @@
+<h1><strong style="color: #1a5910;margin-left: 20px">Votre Formations :</strong></h1>
+<div id="service">
+  <div>
+    <div class="container">
+      <app-prof-formation *ngFor="let form of list;let i = index "
+                          [indexton]="i"
+                          [namefor]="form.namefor"
+      ></app-prof-formation>
+    </div>
+  </div>
+</div>
+

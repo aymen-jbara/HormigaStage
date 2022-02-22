@@ -1,0 +1,25 @@
+
+<div class="card" [ngClass]="{'success': statu==='active',
+                'danger': statu=== 'éteint'}" >
+  <button style="width:10%;margin-left: 200px;background-color: #c4c4c4 " (click)="supform()" ><i class="fa fa-fw fa-minus"></i></button>
+  <div style="width: 20px;height: 20px;background-color: red;border-radius: 30px;margin-top: -30px" *ngIf="statu==='éteint'" ></div>
+  <div style="width: 20px;height: 20px;background-color: green;border-radius: 30px;margin-top: -30px" *ngIf="statu==='active'" > </div>
+  <div>
+    <h4>{{namefor}}</h4>
+    <p>{{cont}}</p><br>
+    <div *ngIf="!root">
+
+      <button *ngIf="statu=='active'" (click)="addListform()" >Inscription</button>
+
+    <h4 *ngIf="statu=='éteint' " style="color: #aa1109"> <strong> attendre une autre session</strong></h4>
+    </div>
+    <div *ngIf="root">
+    <div *ngIf="statu=='éteint'">
+    <button class="btn-btn"(click)="etiendreindex()" >allumer</button></div>
+    <div *ngIf="statu=='active'">
+    <button class="btn-btn" (click) ="allumeindex()" style="background-color: #aa1109">éteindre</button></div>
+  </div>
+  </div>
+  </div>
+
+

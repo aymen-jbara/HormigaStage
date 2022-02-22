@@ -1,0 +1,40 @@
+.card {
+  width: 150px;
+  min-height: 50px;
+  margin: 20px 0px 20px 150px;
+  background-color:rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px   rgb(0, 0, 0,0.2);
+  flex-wrap: nowrap;
+  justify-content: center;
+  transition: 0.3s;
+  position: relative;
+
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  height:5px;
+  right:100%;
+  border-radius: 50px;
+}
+.card:hover{
+  right: 0%;
+  border-bottom: 7px solid rgba(16, 112, 11, 0.78);
+}
+
+.card h4{
+  font-family: 'Rubik', sans-serif;
+  color: #3C1361;
+  font-size: 1.3em;
+  text-align: center;
+}
+.card p{
+  font-family: Calibri;
+  color: rgb(124, 82, 149);
+  font-size: 1.2em;
+  text-align: center;
+}
+
